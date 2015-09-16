@@ -3,6 +3,10 @@ describe('getBiggestLittle', function() {
     expect(getBiggestLittle(1000)).to.equal("M");
   });
 
+    it("is true for a 500 that is a roman numeral", function() {
+      expect(getBiggestLittle(500)).to.equal("C");
+    });
+
   // it("is true for 2 is II", function() {
   //   expect(getNumerals(2)).to.equal("II");
   //

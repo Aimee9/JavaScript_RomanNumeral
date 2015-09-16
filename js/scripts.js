@@ -17,9 +17,9 @@ var getNumerals = function(numbers) {
    if(number >= 1000){
      character = "M";
    }
-  //  else if(number >= 500){
-  //    character = "C"
-  //  }
+  else if(number >= 500){
+      character = "C"
+   }
 
   return character;
  };
