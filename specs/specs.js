@@ -1,6 +1,6 @@
-describe('getNumerals', function() {
+describe('getBiggestLittle', function() {
   it("is true for a 1000 that is a roman numeral", function() {
-    expect(getNumerals(1000)).to.equal("M");
+    expect(getBiggestLittle(1000)).to.equal("M");
   });
 
   // it("is true for 2 is II", function() {

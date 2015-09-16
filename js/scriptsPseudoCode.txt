@@ -1,5 +1,11 @@
 for every # <= 39999
 
+//declare "biggestLittle" to hold largest qualifying Roman numeral which is <= (number)
+// getBiggestLittle(number), add to end of array called romanNums, which will hold roman numera'
+//for loop which runs until number = 0..
+    //number = number - biggestLittle
+    //getBiggestLittle(number);
+//end of for loop
    var bigestLittle = (largest numeral that is <= number as many times as possible)
 
    for(loops for as long as secondBiggestLittler > 0){
