@@ -1,0 +1,13 @@
+for every # <= 39999
+
+   var bigestLittle = (largest numeral that is <= number as many times as possible)
+
+   for(loops for as long as secondBiggestLittler > 0){
+      var secondBiggestLittle = (number - biggestLittle)
+      biggestLitte = (largest numeral that is <= number)
+  }
+
+
+
+
+   then get second/third etc number largest <= subtracted numeral
