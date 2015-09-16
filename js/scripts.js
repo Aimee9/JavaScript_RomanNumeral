@@ -8,22 +8,22 @@ var getNumerals = function(numbers) {
      if(biggestLittle = "M"){
        number = number - 1000;
        }
-       else if(biggestLittle = "D")
+       else if(biggestLittle = "D"){
           number = number - 500;
           }
-        else if(biggestLittle = "C")
+        else if(biggestLittle = "C"){
            number = number - 100;
          }
-         else if(biggestLittle = "L")
+         else if(biggestLittle = "L"){
             number = number - 50;
           }
-         else if(biggestLittle = "X")
+         else if(biggestLittle = "X"){
             number = number - 10;
           }
-         else if(biggestLittle = "V")
+         else if(biggestLittle = "V"){
              number = number - 5;
            }
-         else if(biggestLittle = "I")
+         else if(biggestLittle = "I"){
             number = number - 1;
             }
 
