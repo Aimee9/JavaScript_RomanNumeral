@@ -1,8 +1,17 @@
+var getNumerals = function(numbers) {
+
+  var romanNumeral;
+  romanNumeral = "I";
+  return romanNumeral;
+
+
+};
+
 
 $(document).ready(function() {
   $("form#RomanNumerals").submit(function(event) {
-    var numbers =($("input#numbers").val());
-    numbers = getnumbers(numbers);
+    var numbers = parseInt($("input#numbers").val());
+  //  numbers = getnumerals(numbers);
 
     $(".numbers").text(numbers);
 
