@@ -4,8 +4,13 @@ describe('getBiggestLittle', function() {
   });
 
     it("is true for a 500 that is a roman numeral", function() {
-      expect(getBiggestLittle(500)).to.equal("C");
+      expect(getBiggestLittle(500)).to.equal("D");
     });
+
+    it("is true for a 100 that is a roman numeral", function() {
+      expect(getBiggestLittle(100)).to.equal("C");
+    });
+
 
   // it("is true for 2 is II", function() {
   //   expect(getNumerals(2)).to.equal("II");

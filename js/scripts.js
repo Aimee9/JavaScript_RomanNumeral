@@ -18,8 +18,11 @@ var getNumerals = function(numbers) {
      character = "M";
    }
   else if(number >= 500){
-      character = "C"
+      character = "D"
    }
+   else if(number >= 100){
+       character = "C"
+    }
 
   return character;
  };
