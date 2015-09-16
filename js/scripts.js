@@ -2,7 +2,9 @@ var getNumerals = function(numbers) {
   var romanNumeral = [];
   var numerals;
 
-
+  if((numbers < 0) || (numbers > 3999)) {
+    return "You crazy foo.  That's no Roman Numeral, yo."
+  }
     while(numbers >= 1000){
       romanNumeral.push("M");
       numbers -= 1000;
@@ -15,6 +17,11 @@ var getNumerals = function(numbers) {
 
     while(numbers >= 100){
       romanNumeral.push("C");
+      numbers -= 100;
+    }
+
+    while(numbers >= 99){
+      romanNumeral.push("XCIX");
       numbers -= 100;
     }
 
@@ -59,12 +66,12 @@ var getNumerals = function(numbers) {
 
 
 $(document).ready(function() {
-  $("form#RomanNumerals").submit(function(event) {
+  $("form#romanNumerals").submit(function(event) {
     var numbers = parseInt($("input#numbers").val());
+    var numerals = getNumerals(numbers);
     $(".numeral").text(numerals);
-
-
      $("#result").show();
+
     event.preventDefault();
    });
 });
