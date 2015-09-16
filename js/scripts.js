@@ -5,31 +5,33 @@ var getNumerals = function(numbers) {
    while (numbers > 0){
      biggestLittle = getBiggestLittle(numbers);
      romanNumeral.push(biggestLittle);
-     if(biggestLittle = "M"){
+     if(biggestLittle === "M"){
        numbers = numbers - 1000;
        }
-       else if(biggestLittle = "D"){
+       else if(biggestLittle === "D"){
           numbers = numbers - 500;
           }
-        else if(biggestLittle = "C"){
+        else if(biggestLittle === "C"){
            numbers = numbers - 100;
          }
-         else if(biggestLittle = "L"){
+         else if(biggestLittle === "L"){
             numbers = numbers - 50;
           }
-         else if(biggestLittle = "X"){
+         else if(biggestLittle === "X"){
             numbers = numbers - 10;
           }
-         else if(biggestLittle = "V"){
+         else if(biggestLittle === "V"){
              numbers = numbers - 5;
            }
-         else if(biggestLittle = "I"){
+         else if(biggestLittle === "I"){
             numbers = numbers - 1;
             }
 
           }
+          var numbers = romanNumeral.join();
+             numbers = numbers.replace(/[,]/g,"");
 
-          return romanNumeral;
+          return numbers;
 
 
 
