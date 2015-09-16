@@ -32,6 +32,10 @@ var getNumerals = function(numbers) {
          character = "X";
       }
 
+      else if(number >= 5){
+          character = "V";
+       }
+
   return character;
  };
 
