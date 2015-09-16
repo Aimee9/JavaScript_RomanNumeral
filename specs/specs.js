@@ -20,4 +20,13 @@ describe('getNumerals', function() {
     expect(getNumerals(80)).to.equal("LXXX");
   });
 
+  it("will know how to correctly make a roman numeral with the number 99", function() {
+    expect(getNumerals(99)).to.equal("XCIX");
+  });
+
+  it("will yell at the user for the wrong input", function() {
+    expect(getNumerals(4000)).to.equal("You crazy foo.  That's no Roman Numeral, yo.");
+  });
+
+
 });
