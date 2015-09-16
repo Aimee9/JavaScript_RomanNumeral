@@ -42,3 +42,10 @@ describe('getBiggestLittle', function() {
   //
   // });
 });
+
+describe('getNumerals', function() {
+  it("is true for a 15 that is a roman numeral", function() {
+    expect(getNumerals(15)).to.equal("VX");
+  });
+
+});
