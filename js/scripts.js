@@ -21,7 +21,7 @@ var getNumerals = function(numbers) {
             numbers = numbers - 10;
           }
          else if(biggestLittle = "V"){
-             numbers = numberss - 5;
+             numbers = numbers - 5;
            }
          else if(biggestLittle = "I"){
             numbers = numbers - 1;
