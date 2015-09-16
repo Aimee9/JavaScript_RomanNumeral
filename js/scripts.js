@@ -36,6 +36,11 @@ var getNumerals = function(numbers) {
           character = "V";
        }
 
+       else if(number >= 1){
+           character = "I";
+        }
+
+
   return character;
  };
 
