@@ -18,15 +18,19 @@ var getNumerals = function(numbers) {
      character = "M";
    }
   else if(number >= 500){
-      character = "D"
+      character = "D";
    }
    else if(number >= 100){
-       character = "C"
+       character = "C";
     }
 
     else if(number >= 50){
-        character = "L"
+        character = "L";
      }
+
+     else if(number >= 10){
+         character = "X";
+      }
 
   return character;
  };

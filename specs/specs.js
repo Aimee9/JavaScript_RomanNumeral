@@ -15,6 +15,10 @@ describe('getBiggestLittle', function() {
       expect(getBiggestLittle(50)).to.equal("L");
     });
 
+    it("is true for a 10 that is a roman numeral", function() {
+      expect(getBiggestLittle(10)).to.equal("X");
+    });
+
 
 
   // it("is true for 2 is II", function() {
