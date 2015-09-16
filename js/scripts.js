@@ -24,6 +24,10 @@ var getNumerals = function(numbers) {
        character = "C"
     }
 
+    else if(number >= 50){
+        character = "L"
+     }
+
   return character;
  };
 
