@@ -1,30 +1,30 @@
 var getNumerals = function(numbers) {
-  var biggestLittle; //holds the largest qualifying Roman numeral which is <= (number)
+  var biggestLittle; //holds the largest qualifying Roman numeral which is <= (numbers)
   var romanNumeral = new Array(); //will hold the roman numeral
 
    while (numbers > 0){
-     biggestLittle = getBiggestLitte(number);
+     biggestLittle = getBiggestLittle(numbers);
      romanNumeral.push(biggestLittle);
      if(biggestLittle = "M"){
-       number = number - 1000;
+       numbers = numbers - 1000;
        }
        else if(biggestLittle = "D"){
-          number = number - 500;
+          numbers = numbers - 500;
           }
         else if(biggestLittle = "C"){
-           number = number - 100;
+           numbers = numbers - 100;
          }
          else if(biggestLittle = "L"){
-            number = number - 50;
+            numbers = numbers - 50;
           }
          else if(biggestLittle = "X"){
-            number = number - 10;
+            numbers = numbers - 10;
           }
          else if(biggestLittle = "V"){
-             number = number - 5;
+             numbers = numberss - 5;
            }
          else if(biggestLittle = "I"){
-            number = number - 1;
+            numbers = numbers - 1;
             }
 
           }
@@ -35,35 +35,35 @@ var getNumerals = function(numbers) {
 
  };
 
-//returns largest roman numeral <= number
- var getBiggestLittle = function(number) {
+//returns largest roman numeral <= numbers
+ var getBiggestLittle = function(numbers) {
    var character;
 
-  if(number >= 1000){
+  if(numbers >= 1000){
      character = "M";
     }
 
-   else if(number >= 500){
+   else if(numbers >= 500){
         character = "D";
     }
 
-   else if(number >= 100){
+   else if(numbers >= 100){
          character = "C";
     }
 
-   else if(number >= 50){
+   else if(numbers >= 50){
           character = "L";
     }
 
-   else if(number >= 10){
+   else if(numbers >= 10){
            character = "X";
     }
 
-   else if(number >= 5){
+   else if(numbers >= 5){
             character = "V";
     }
 
-   else if(number >= 1){
+   else if(numbers >= 1){
              character = "I";
     }
 
